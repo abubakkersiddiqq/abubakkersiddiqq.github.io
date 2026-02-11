@@ -7,101 +7,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-page">
-        <header class="header">
-            <h1>Abubakker Siddiq</h1>
-            <div class="contact-info">
-                <span>Bengaluru, KA</span> | 
-                <a href="mailto:abubakkerconnect@gmail.com">Email</a> | 
-                <a href="https://linkedin.com/in/abubakker-siddiq-715759231" target="_blank">LinkedIn</a> | 
-                <a href="https://github.com/abubakkersiddiqq" target="_blank">GitHub</a>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>ABUBAKKER SIDDIQ</h1>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/abubakker-siddiq-715759231" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/abubakkersiddiqq" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:abubakkerconnect@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
             </div>
         </header>
 
+        <!-- SUMMARY -->
         <section>
-            <h2 class="section-title">Professional Summary</h2>
-            <p>Motivated BCA student with a strong passion for programming, web development, and artificial intelligence. I enjoy building practical applications from scratch, exploring new technologies like APIs, embeddings, and local LLMs, and solving real-world problems through hands-on projects. Always eager to learn step by step, write clean and maintainable code, and contribute effectively in a collaborative environment.</p>
+            <h2>Professional Summary</h2>
+            <p>
+                Backend-focused Python developer building real-world applications with Flask, APIs, and local LLM integrations.
+                Experience in semantic search systems, vector databases, and real-time data applications.
+                Strong understanding of backend architecture, clean code structure, and modular design.
+            </p>
         </section>
 
+        <!-- SKILLS -->
         <section>
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <p><strong>Programming:</strong> Python, R</p>
-                <p><strong>Web Development:</strong> FastAPI, Flask, HTML, CSS, JavaScript</p>
-                <p><strong>Libraries:</strong> Pandas, NumPy, NLTK</p>
-                <p><strong>Data Visualization:</strong> Matplotlib, Seaborn</p>
-                <p><strong>Databases:</strong> PostgreSQL, SQLite, SQLAlchemy</p>
-                <p><strong>Tools:</strong> Git, GitHub, VS Code, Jupyter Notebook, Tkinter</p>
-                <p><strong>Problem Solving:</strong> Data Structures and Algorithms (Arrays, Hashing, Strings on <em>LeetCode</em>)</p>
-            </div>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><b>Programming:</b> Python, R, JavaScript, C (Basics)</li>
+                <li><b>Backend Development:</b> Flask, FastAPI (Basics), REST APIs, Jinja2</li>
+                <li><b>AI / NLP:</b> SentenceTransformers, Embeddings, ChromaDB, NLTK, Ollama (Local LLM Integration)</li>
+                <li><b>Data & Processing:</b> Pandas, NumPy, JSON Handling</li>
+                <li><b>Databases:</b> PostgreSQL, SQLite, SQLAlchemy</li>
+                <li><b>Frontend:</b> HTML, CSS, JavaScript (DOM, Auto-refresh UI)</li>
+                <li><b>Tools:</b> Git, GitHub, VS Code, Jupyter Notebook, Render</li>
+                <li><b>Concepts:</b> Data Structures & Algorithms (Arrays, Hashing, Strings)</li>
+            </ul>
         </section>
 
+        <!-- PROJECTS -->
         <section>
-            <h2 class="section-title">Projects</h2>
+            <h2>Project Experience</h2>
 
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Real-Time Crypto Order Book | <em>Python, FastAPI, Binance API, HTML/CSS/JS</em></span>
-                    <span class="item-date">Dec 2025</span>
-                </div>
+            <div class="project">
+                <h3>Real-Time Crypto Order Book Web App</h3>
+                <p><b>Tech:</b> Python, Flask, JavaScript, REST API, Render</p>
                 <ul>
-                    <li>Created a web application to display live cryptocurrency order book data from the Binance public API.</li>
-                    <li>Managed real-time data fetching, JSON processing, and automatic page refresh every few seconds.</li>
-                    <li>Designed a clean, responsive interface to show bids and asks clearly.</li>
-                    <li>Added robust error handling with timeout and retry logic to maintain reliability.</li>
+                    <li>Built a real-time cryptocurrency order book viewer using Binance Depth API.</li>
+                    <li>Implemented backend routes for live market data fetching and processing.</li>
+                    <li>Designed auto-refreshing UI for real-time bid/ask updates.</li>
+                    <li>Added structured error handling for API instability.</li>
+                    <li><b>Live:</b> <a href="https://order-book-dz9z.onrender.com" target="_blank">https://order-book-dz9z.onrender.com</a></li>
                 </ul>
             </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Document Retrieval | <em>Python, Sentence-Transformers, ChromaDB, Pandas</em></span>
-                    <span class="item-date">Nov 2025</span>
-                </div>
+            <div class="project">
+                <h3>Document Retrieval System</h3>
+                <p><b>Tech:</b> Python, SentenceTransformer, ChromaDB</p>
                 <ul>
-                    <li>Developed a semantic search engine that enables natural language queries over structured CSV datasets.</li>
-                    <li>Applied text preprocessing and embedding generation using pre-trained SentenceTransformer models.</li>
-                    <li>Implemented vector-based similarity search using ChromaDB for efficient document retrieval.</li>
+                    <li>Implemented embedding-based semantic search pipeline.</li>
+                    <li>Built chunking + vector storage workflow for document similarity retrieval.</li>
+                    <li>Validated search accuracy using structured test queries.</li>
+                    <li><b>Code:</b> <a href="https://github.com/abubakkersiddiqq/document-retrieval" target="_blank">GitHub Repository</a></li>
                 </ul>
             </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Mini Chatbot | <em>Python, Tkinter, Ollama (gemma:2b)</em></span>
-                    <span class="item-date">Dec 2025</span>
-                </div>
+            <div class="project">
+                <h3>Task Manager Web App</h3>
+                <p><b>Tech:</b> Python, Flask, HTML, CSS, JSON</p>
                 <ul>
-                    <li>Built a lightweight desktop chatbot application using Python with a Tkinter GUI.</li>
-                    <li>Integrated a local large language model via Ollama, enabling offline AI responses.</li>
-                    <li>Structured the project with clear separation of UI and AI logic for maintainability.</li>
+                    <li>Developed CRUD-based task manager using Flask and Jinja templates.</li>
+                    <li>Structured backend logic with modular routing.</li>
+                    <li>Used JSON-based lightweight data persistence.</li>
+                    <li>Maintained clean separation between UI and backend logic.</li>                    
                 </ul>
             </div>
+
         </section>
 
+        <!-- CERTIFICATIONS -->
         <section>
-            <h2 class="section-title">Education</h2>
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title"><strong>East Point College Of Higher Education</strong></span>
-                    <span class="item-date">Bengaluru, KA</span>
-                </div>
-                <div class="item-header">
-                    <span class="item-sub"><em>Bachelor of Computer Application</em></span>
-                    <span class="item-date">Aug 2023 - Present</span>
-                </div>
-            </div>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Object-Oriented Programming with Python</li>
+                <li>Introduction to Machine Learning</li>
+                <li>C Programming for Beginners</li>
+            </ul>
         </section>
 
-        <section>
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-item">
-                <strong>Introduction to Machine Learning</strong>
-                <ul><li>Covered fundamentals of supervised learning and basic model evaluation concepts.</li></ul>
-            </div>
-            <div class="cert-item">
-                <strong>Object-Oriented Programming with Python</strong>
-                <ul><li>Learned core OOP principles including classes, objects, inheritance, and encapsulation.</li></ul>
-            </div>
-        </section>
     </div>
 </body>
 </html>
